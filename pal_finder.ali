@@ -1,0 +1,109 @@
+V "GNAT Lib v2014"
+M P W=b
+P SS ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV SPARK_05
+
+U pal_finder%b		pal_finder.adb		7b823845 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.characters%s	a-charac.ads		a-charac.ali
+W ada.characters.handling%s  a-chahan.adb	a-chahan.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system.concat_3%s	s-conca3.adb		s-conca3.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+
+D ada.ads		20140406181354 3ffc8e18 ada%s
+D a-charac.ads		20140406181359 2d3ec45b ada.characters%s
+D a-chahan.ads		20140406181359 1601a50f ada.characters.handling%s
+D a-except.ads		20140406181356 43d57f8c ada.exceptions%s
+D a-finali.ads		20140406181359 69f99942 ada.finalization%s
+D a-ioexce.ads		20140406181358 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20140406181355 1a984740 ada.streams%s
+D a-tags.ads		20140406181357 dc4d0634 ada.tags%s
+D a-textio.ads		20140406181359 386df5d4 ada.text_io%s
+D a-unccon.ads		20140406181359 f9eb8f06 ada.unchecked_conversion%s
+D interfac.ads		20140406181359 69adb1b9 interfaces%s
+D i-cstrea.ads		20140406181357 febc86ed interfaces.c_streams%s
+D pal_finder.adb	20180217041304 55ee689e pal_finder%b
+D system.ads		20140406181356 bd760655 system%s
+D s-conca3.ads		20140406181355 0b705ca5 system.concat_3%s
+D s-crtl.ads		20140406181356 2c012597 system.crtl%s
+D s-exctab.ads		20140406181354 54135002 system.exception_table%s
+D s-ficobl.ads		20140406181355 078245e4 system.file_control_block%s
+D s-finmas.ads		20140406181356 814daec4 system.finalization_masters%s
+D s-finroo.ads		20140406181359 4ff27390 system.finalization_root%s
+D s-parame.ads		20140406181358 06da98b2 system.parameters%s
+D s-pooglo.ads		20140406181357 542f33d0 system.pool_global%s
+D s-secsta.ads		20140406181359 86a2856d system.secondary_stack%s
+D s-soflin.ads		20140406181358 aa763b52 system.soft_links%s
+D s-stache.ads		20140406181355 a37c21ec system.stack_checking%s
+D s-stalib.ads		20140406181355 fa0a3617 system.standard_library%s
+D s-stoele.ads		20140406181357 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20140406181355 ed88f8fb system.storage_elements%b
+D s-stopoo.ads		20140406181357 b16154c2 system.storage_pools%s
+D s-traent.ads		20140406181355 b5116092 system.traceback_entries%s
+D s-unstyp.ads		20140406181356 510692af system.unsigned_types%s
+D s-wchcon.ads		20140406181358 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 13|1r6 1r19 2r5 2r18 83r25
+X 2 a-charac.ads
+16K13*Characters 18e19 13|1r23 2r22
+X 3 a-chahan.ads
+36K24*Handling 159e28 13|1w34 2r33
+71V13*To_Upper{string} 13|18s23 19s18
+X 9 a-textio.ads
+49K13*Text_IO 471e16 13|1w10 2r9 83r29
+184V13*End_Of_File{boolean} 13|81s14
+256V13*Get_Line{string} 13|83s37
+263U14*Put_Line 13|88s10 91s13 93s13 95s10
+X 13 pal_finder.adb
+3U11*pal_finder 3b11 98l5 98t15
+4V13 reverseString{string} 4b13 4>28 11l8 11t21 20s23 52s25 54s25 63s29
+4a28 txt{string} 5r30 7r16 8r47 8r61
+5a7 resultString{string} 8m10 8r23 10r14
+7i11 i{integer} 8r43 8r65
+13V13 toCapitals{boolean} 13b13 13>25 25l8 25t18 64s28
+13a25 txt{string} 14r29 15r26 18r32 19r27
+14a7 resultString{string} 18m7 20m7 20r37 21r20
+15a7 txtCopy{string} 19m7 21r10
+16b7 key{boolean} 22m10 24r14
+27V13 removeChars{boolean} 27b13 27>26 60l8 60t19
+27a26 txt{string} 29r26 31r23 33r27
+28E12 symbols 28e60
+28n24 '!'{28E12}
+28n28 '@'{28E12}
+28n32 '#'{28E12}
+28n36 '$'{28E12}
+28n40 '%'{28E12}
+28n44 '^'{28E12}
+28n48 '&'{28E12}
+28n52 ' '{28E12}
+28n56 '*'{28E12}
+29a7 copyTxt{string} 30r26 32r30 38r10 39r19 40r16 41m16 42r19 43m16 46r21
+. 46r32 49r21
+30a7 evenTxt{string} 46m10 52r39 56r35
+31a7 normTxt{string} 49m10 54r39 56r10
+32a7 evenTxtCopy{string} 52m10 56r45
+33a7 normTxtCopy{string} 54m10 56r20
+34b7 switcher{boolean} 47m10 51r10
+35b7 key{boolean} 57m10 59r14
+36i7 Even_Num{integer} 38r29
+39i14 i{integer} 40r24 41r24 42r27 43r24
+62U14 palindrome 62b14 62>26 62<40 78l8 78t18 89s10
+62a26 txt{string} 63r43 64r39 70r10
+62i40 stateSet{integer} 71m10 73m10
+63a7 reverseTxt{string} 70r16
+64b7 upperTxt{boolean} 72r13
+66i7 State_One{integer} 71r22
+67i7 State_Two{integer} 73r22
+83a10 str{string} 88r34 89r21
+84i10 setNum{integer} 89m25 90r13 92r16
+85i10 State_One{integer} 90r22
+86i10 State_Two{integer} 92r25
+
